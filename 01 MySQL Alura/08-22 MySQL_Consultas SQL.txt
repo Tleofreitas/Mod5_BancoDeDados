@@ -1,0 +1,4 @@
+CONSULTAS SQL: AVANÇANDO NO SQL COM MYSQL
+14 horas
+
+https://cursos.alura.com.br/certificate/thiago-freitas11/mysql-consultas-sql

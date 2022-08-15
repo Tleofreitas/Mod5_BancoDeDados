@@ -28,6 +28,17 @@ JOIN tb_resultado RES ON ALUNO.cpf = RES.aluno_id
 WHERE TURMA.numero=10 AND RES.avaliacao_id IN (3,4)
 GROUP BY ALUNO.CPF
 
+-- Questão 4 (Professor) ---
+SELECT tb_aluno.nome, sum(tb_resultado.nota_obtida) AS total
+FROM tb_avaliacao
+INNER JOIN tb_resultado ON tb_resultado.avaliacao_id = tb_avaliacao.id
+INNER JOIN tb_aluno ON tb_aluno.cpf = tb_resultado.aluno_id
+INNER JOIN tb_turma ON tb_turma.id = tb_avaliacao.turma_id
+WHERE tb_turma.numero = 10
+GROUP BY tb_aluno.nome
+
+
+
 
 
 
